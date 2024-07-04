@@ -1,0 +1,89 @@
+
+<link rel="stylesheet" href="header.component.css">
+<header class="toparea">
+    <div class="container">
+        <div class="row toparea1">
+            <div class="col-md-4 col-12 top1">
+                <i class="fa fa-mobile-phone"></i>&nbsp;<a href=tel:7482825534>7482825534</a>
+            </div>
+            <div class="col-md-4 col-12 top1">
+                <i class="fa fa-envelope"></i>&nbsp;<a href="mailto:rktentjamshedpur@gmail.com">rktentjamshedpurgmail.com</a>
+            </div>
+            <div class="col-md-4 col-12 top3">
+                <a href="form.html">BOOK NOW</a>
+            </div>
+        </div>
+    </div>
+</header>
+<header class="heading">
+    <div class="container">
+        <div class="row heading1">
+            <div class="col-md-2 col-12">
+                <a href="logo.jpg"><img src="logo.jpg" alt=""></a>
+            </div>
+            <div class="col-md-3 col-12">
+                <h3>R.K Tent House</h3>
+                <p>Make your events sepecial!!</p>
+            </div>
+            <div class="col-md-7 col-12">
+                <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs" >
+                    <li [ngbNavItem]="1">
+                        <button ngbNavLink>Home</button>
+                    </li>
+                    <li [ngbNavItem]="2">
+                        <button ngbNavLink>About</button>
+                    </li>
+                    <li [ngbNavItem]="3">
+                        <button ngbNavLink>Service</button>
+                    </li>
+                    <li [ngbNavItem]="4">
+                        <button ngbNavLink>Planning</button>
+                    </li>
+                    <li [ngbNavItem]="5">
+                        <div ngbDropdown class="d-inline-block">
+                            <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+                                Gallery
+                            </button>
+                            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                <button ngbDropdownItem>Mehndi</button>
+                                <button ngbDropdownItem>Haldi</button>
+                                <button ngbDropdownItem>Stage</button>
+                                <button ngbDropdownItem>Passage</button>
+                                <button ngbDropdownItem>Birthday</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li [ngbNavItem]="6">
+                        <button ngbNavLink>Contact</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header><section class="slidearea">
+    <div class="container-fluid">
+        <div class="row slidearea1">
+            <div class="col">@if (images) {
+                <ngb-carousel>
+                    <ng-template ngbSlide>
+                        <div class="picsum-img-wrapper">
+                            <img [src]="images[0]" alt="Random first slide" />
+                        </div>
+                    </ng-template>
+                    <ng-template ngbSlide>
+                        <div class="picsum-img-wrapper">
+                            <img [src]="images[1]" alt="Random second slide" />
+                        </div>
+                    </ng-template>
+                    <ng-template ngbSlide>
+                        <div class="picsum-img-wrapper">
+                            <img [src]="images[2]" alt="Random third slide" />
+                        </div>
+                    </ng-template>
+                </ngb-carousel>
+            }
+            
+            </div>
+        </div>
+    </div>
+</section>
