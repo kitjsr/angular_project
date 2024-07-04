@@ -39,8 +39,8 @@ body{
     text-align: center;
 }
 .heading1 img{
-    width:80%;
     border-radius:100%;
+    background-color: red;
 }
 .heading1 h3{
     color:#D5B455;
@@ -80,16 +80,4 @@ body{
 }
 .nav-tabs ul{
     color: #D5B455 !important;
-}
-.slidearea1 h1{
-    text-align:center;
-    font:normal bold 80px georgia;
-    color:#d5b455;
-    margin:0;
-    padding:0;
-    letter-spacing:5px;
-    word-spacing:10px;
-    background:rgba(213, 180, 85,0.1);
-    text-shadow: 1px 0px 1px maroon, 0px 1px 1px maroon, 2px 1px 1px maroon, 1px 2px 1px maroon, 3px 2px 1px maroon, 2px 3px 1px #D5B455, 4px 3px 1px #d5b455, 3px 4px 1px #D5B455, 5px 4px 1px #d5b455, 4px 5px 1px maroon, 6px 5px 1px #D5B455, 5px 6px 1px maroon, 7px 6px 1px #D5B455;
-
 }
