@@ -12,15 +12,14 @@
     margin-bottom:15px;
 }
 .segment2{
-    background: url("../../../assets/bg2.webp") no-repeat scroll;
-    background-attachment: fixed;
+    background: url("../../../assets/bg2.webp") no-repeat fixed;
     background-size: cover;
     padding:100px 200px;
 }
 /* .box1{
     padding:50px 0px 50px 100px;
 } */
-.box1{
+/* .box1{
     background: rgba(218, 6, 32, 0.75);
     padding: 15px;
     border-radius: 15px;
@@ -94,5 +93,16 @@
     line-height:25px;
     text-align: justify;
     overflow: hidden;
+  } */
+  .box{
+    background-color: red;
+    margin:5px;
+    padding:10px;
+  }
+  .box img{
+    width:100%;
+  }
+  div:nth-child(3){
+    background-color: orange !important;
   }
   
