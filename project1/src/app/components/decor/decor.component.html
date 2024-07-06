@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="decor.component.css">
+
+<section class="decor">
+    <div class="container-fluid">
+        <div class="row decor1">
+            <div class="col">
+                <h2>Wedding Decor & Tenting</h2>
+                <img src="assets/icon.jpg" alt="image">
+            </div>
+        </div>
+        <div class="row">
+            @for (decor of decors; track $index) {
+                <div class="col-md-4 col-12">
+                    <div class="box">
+                        <img src="{{decor.image}}" alt=""  class="card-img-top">
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
